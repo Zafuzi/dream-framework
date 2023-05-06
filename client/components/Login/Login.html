@@ -1,0 +1,32 @@
+<LoginOrRegister>
+    <form id="loginOrRegister">
+        <label>
+            Username
+            <input type="text" name="username" />
+        </label>
+        <label>
+            Email
+            <input type="email" name="email" />
+        </label>
+        <label>
+            Password
+            <input type="text" name="Password" />
+        </label>
+        
+        <input type="submit" value="{{actionName}}" />
+        
+        {{#if isLogin}}
+            <p>
+                Don't have an account?
+                <a href="/login?action=register">Register</a>
+            </p>
+        {{else}}
+            <p>
+                Already have an account?
+                <a href="/login?action=login">Login</a>
+            </p>
+        {{/if}}
+    </form>
+</LoginOrRegister>
+
+<script src="./Login.js"></script>

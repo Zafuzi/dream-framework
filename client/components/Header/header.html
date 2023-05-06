@@ -1,0 +1,43 @@
+<AppHeader>
+    <header>
+        <h1>Dream Framework</h1>
+        <nav>
+            <ul>
+                <li><a class="{{testActive}}" data-route="home" href="/client/public">Home</a></li>
+                <li><a class="{{testActive}}" data-route="about" href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+</AppHeader>
+
+<!-- this will be run through a preprocessor and turned into css then stripped out of here and placed into a bundle.css or something -->
+<style lang="less">
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #333;
+        color: #fff;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    nav ul li {
+        margin-left: 1rem;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<script src="./header.js"></script>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Dream Framework</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- InjectXXX is a place for the pre-processor to inject something -->
+
+        <!-- Here I want to inject specific data for this page for example og:title etc... -->
+        <InjectMeta />
+        
+        <link rel="stylesheet" href="globals.less">
+        
+        <!-- In this case I was to inject the styles necessary for all the components that will be rendered on this page -->
+        <InjectStyles />
+    </head>
+    <body>
+        <AppHeader />
+        <main>
+            <InjectContent />
+        </main>
+        <footer>
+            <p>© 2023 Dream Framework</p>
+        </footer>
+    
+        <script src="globals.js"></script>
+        <InjectScripts />
+    </body>
+</html>

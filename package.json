@@ -1,0 +1,19 @@
+{
+  "name": "dream-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "package": "npx sleepless-publish",
+    "publish:dry": "npx sleepless-publish --dry-run",
+    "publish": "npx sleepless-publish --production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

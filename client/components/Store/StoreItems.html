@@ -1,0 +1,13 @@
+<StoreItems>
+    {{#each data.items as item}}
+        <Item />
+    {{/each}}
+</StoreItems>
+
+<Item>
+    <h3>{{title}}</h3>
+    <img src="{{image.source}}" alt="{{title}}" />
+    <p>{{description}}</p>
+</Item>
+
+<script src="./StoreItems.js"></script>
